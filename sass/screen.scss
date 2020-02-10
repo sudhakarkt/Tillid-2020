@@ -1,0 +1,25 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,500,700,800,900|Roboto+Slab:300,400,500,600,700,800,900|Source+Sans+Pro:300,400,600,700&display=swap');
+@import "compass/reset";
+
+//mixin
+@import "utils/mixins";
+@import "utils/extends";
+
+
+@import "settings/theme";
+@import "settings/custom";
+@import "settings/nav";
+@import "settings/loader";
+
+
+@import "pages/home";
+@import "pages/aboutus";
+@import "pages/skills";
+@import "pages/contacts";
+@import "pages/core";
+
+@import "pages/responsive";

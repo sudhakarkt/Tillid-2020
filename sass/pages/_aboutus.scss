@@ -1,0 +1,89 @@
+#aboutus
+{
+   // background-color: $white;
+    .leftContainer
+    {
+        position: absolute;
+        width: 50%;
+        height:100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        left:7%;
+        .whyTillid
+        {
+            width: 60%;
+            position: absolute;
+            top: 25%;
+            h1{
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                font-weight: 600;
+                font-family: 'Roboto Slab';
+            }
+            p{
+                line-height: 26px;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            }
+        }
+      
+        
+    }
+    .rightContainer
+    {
+        position: absolute;
+        width: 50%;
+        height:100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        right:0;
+        .rightColorBox{
+            height: 50%;
+            width: 80%;
+           // background-color: #AF0F3B;
+           background-image: url(../images/dot2.png);
+            
+        }
+        .imageBox{
+            height: 60%;
+            width: 40%;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+            background-image: url(../images/about.jpg);
+            background-size: cover;
+            background-position-x: 35%;
+        }  
+        .vision{
+            h1{
+                font-size: 2rem;
+                font-weight: 400;
+                font-family: 'Roboto Slab';
+            }
+            max-width: 55%;
+            padding: 20px;
+            top:28%;
+            position: absolute;
+            left: -17%;
+            border-radius: 10px;
+            background-color: #dfffec;;
+           // @include box-shadow(1px, 2px, 7px, 1px, #bebbbb);
+        }  
+        .mision{
+            h1{
+                font-size: 2rem;
+                font-weight: 400;
+                font-family: 'Roboto Slab';
+            }
+            max-width: 45%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #ffdeff;;
+            position: absolute;
+            left: 0;
+            bottom: 17%;
+        }      
+    }    
+}

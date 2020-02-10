@@ -1,0 +1,130 @@
+#industries{
+    overflow: hidden;
+    .industriesWrapper
+    {
+        height: 100%;
+        width:100%;
+        position: absolute;
+        
+        .industriesLeft
+        {
+            position: absolute;
+            left: 0;
+            right: 70%;
+            top:10%;
+            
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .svgBox
+            {
+                width: 80%;
+                height: 65%;
+                position: absolute;
+                right: 0;
+               
+                .industriesHeader{
+                    font-family: 'Roboto Slab','sans-sarif';
+                    font-size: 3rem;
+                    color: #06004D;
+                    position: absolute;
+                    top: 5%;
+                    right: -15%;
+                    font-weight: 600;
+                    z-index: 1;
+                }
+                .dots4{
+                    position: absolute;
+                    right: -40px;
+                    top: -30px;
+                    height: 100%;
+                    width: 237px;
+                    fill: rgba(6, 0, 77, 0.6);
+                }
+                #track4-hide
+                {
+                    fill:red;
+                }
+            }
+        }
+        .industriesRight
+        {
+            position: absolute;
+            left: 30%;
+            right: 0%;
+            top:10%;
+          
+            height: 90%;
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            align-items: center;
+            .industriesContainer{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                .imageRow
+                {
+                    padding: 5px;
+                    margin: 5px;
+                    flex-direction: row;
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;                   
+                    .imgBox{
+                        
+                        padding: 5px;
+                        margin: 5px;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-basis: 0;
+                        border-radius: 5px;
+                        background-color: #EAFAF9;
+                        //box-shadow: 3px 0px 7px 0px rgba($black,0.3);
+                        position: relative;
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        .overlay
+                        {
+                            opacity: 0.7;
+                            @include linearGradient(transparent, #000000);
+                            top: 5px;
+                            left: 5px;
+                            position: absolute;
+                            right: 5px;
+                            bottom: 5px;
+                            border-radius: 5px;
+                        }
+                        h1{
+                            line-height: 35px;
+                            position: absolute;
+                            bottom: -3px;
+                            border-radius: 0 0 5px 5px;
+                            left: 5px;
+                            right: 5px;
+                            font-size: 1.2rem;
+                            padding: 5px 15px;     
+                            color: $white;
+                            //border-radius: 5px;
+                            background-color: rgba($black,0.5);
+                          //  box-shadow: 3px 0px 7px 0px rgba($black,0.3);
+                        }
+
+                        img
+                        {
+                            width: 100%;
+                           
+                            object-fit: contain;
+                            border-radius: 5px;
+                        }
+
+                    }
+                
+                }
+            }
+        }
+     
+    }
+}

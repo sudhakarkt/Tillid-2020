@@ -1,0 +1,129 @@
+#whoweare
+{
+    .container{
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        height: 80%;
+        .leftContainer
+        {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            right: 70%;
+            .contentLeft{    
+                .imgWhoWeAre{
+                    position: absolute;
+                }          
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                height: 60%;
+                .dots2
+                {
+                    position: absolute;
+                    top: -35px;                  
+                    right: -35px;
+                    height: 100%;
+                    width: 100%;
+                    fill:rgba($mainColor,0.6);
+               
+                }
+                
+            }
+        }
+        .rightContainer
+        {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            width: 60%;
+        
+            .contentRight{
+                position: absolute;
+                width: 95%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                overflow: hidden;
+                h1{
+                    font-family: 'Roboto Slab',sans-serif;
+                    font-weight: 800;
+                    font-size: 2.5rem; 
+                    text-transform: uppercase;
+                    color: $mainColor;
+                    
+                   
+                }
+                h2{
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    font-size: 2.3rem;
+                    top: 10%;
+                    line-height: 34px;
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-family: 'Alegreya Sans', sans-serif;
+                    background-color: $black;
+                   
+                }
+                p{      
+                    font-size: 1.2rem;
+                    top: 10%;
+                    line-height: 25px;                   
+                    color: rgba($black,0.7);
+                    font-weight: 100;
+                    
+                    
+                }
+            }
+        }
+    }
+    #svgWhoWeAre
+    {
+        fill:url(../images/illustration.svg);
+    }
+    // .content
+    // {
+    //     position: absolute;
+    //     height: 70%;
+    //     width: 80%;
+    //     top: 70%;
+    //     right: 0;
+    //     transform: translate(-10%, -70%);
+    //     z-index: 1;
+    //     p{      
+    //         font-size: 1.6rem;
+    //         top: 10%;
+    //         line-height: 35px;
+    //         margin: 15% 0 0 0;
+    //         color: #707070;
+         
+    //     }
+    // }
+    // .box{
+    //     position: absolute;
+    //     height: 70%;
+    //     width: 30%;
+    //     top: 70%;
+    //     left: 10%;
+    //     transform: translate(-10%, -70%);       
+    //    h1{
+    //     font-family: 'Roboto Slab',sans-serif;
+    //     font-weight: 800;
+    //     font-size: 2.5rem; 
+    //     text-transform: uppercase;
+    //     color: $mainColor;
+    //     position:absolute;
+    //     left: -25px;
+    //     top: 18%;
+    //    }
+    // }
+}

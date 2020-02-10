@@ -1,0 +1,10 @@
+/* CSS Document */
+
+
+/*   @include text-gradient(left, $c-primary, $c-secondary);*/
+
+@mixin text-gradient($from, $to) {
+  background: -webkit-linear-gradient(-45deg,$from, $to);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

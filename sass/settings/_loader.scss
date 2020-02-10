@@ -1,0 +1,37 @@
+#loader
+{
+    width: 300px;
+    height: 300px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .circle
+    {
+        height: 25px;
+        width: 25px;
+        border-radius: 500px;
+        background-color: $mainColor;
+       
+    }
+    .loadingText
+    {
+        padding-top: 10px;
+        font-size: 1.3rem;
+        color: $mainColor;
+        display: flex;
+        flex-direction: row;
+        .text
+        {
+             
+        }
+        .contDots
+        {
+            
+        }
+       
+    }
+}

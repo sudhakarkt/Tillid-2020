@@ -1,0 +1,239 @@
+#skills {
+    overflow: hidden;
+
+    .bgContainer {
+        height: 100vh;
+        width: 100vw;
+
+        .bgSkill {
+
+            height: 100vh;
+            width: 100vw;
+            background-color: #F3F3F3;
+            z-index: 1;
+
+        }
+
+    }
+
+    .barDivided {
+        width: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        left: 35%;
+        z-index: 2;
+        height: 80%;
+    }
+
+    .skillsContainer {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+
+        //   overflow: hidden;      
+        .skillLeftContainer {
+            width: 35%;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 5;
+
+            .titleContainer {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+
+                .title {
+                    &:first-child {
+                        opacity: 1;
+
+                        h1 {
+                            font-size: 2rem;
+                            font-family: 'Roboto Slab', 'sans sarif';
+
+                        }
+                    }
+
+                    display: flex;
+                    height: 100px;
+                    width: 100%;
+                    opacity: 0.1;
+
+                    justify-content: center;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 1.5rem;
+                        font-family: 'Roboto Slab', 'sans sarif';
+
+                    }
+
+
+
+                }
+            }
+
+        }
+
+        .skillRightContainer {
+            width: 65%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 0;
+            top: 0;
+
+            .skillBox {
+                height: 100%;
+                width: 100%;
+                background-color: #ffffff;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                padding-right: 20px;
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        margin: 0 10px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        &.secondCol
+                        {
+                            transform: translate(0px, -1470%);
+                        }
+                        &.fourthCol
+                        {
+                            transform: translate(0px, -1430%);
+                        }
+                        
+                        
+
+                        li {
+                            position: relative;
+                            margin: 10px;
+                            width: 100%;
+                            min-height: 45%;
+                            height: 100%;
+                            border-radius: 15px;
+                            background-color: #ccc;
+                            background-size: cover;
+                            h1 {
+                                padding: 25px;
+                                color:$white;
+                                font-size: 1.6rem;
+                                @include single-text-shadow(1px, 1px, 2px, rgba($black,0.7));
+                                &.miniBox {
+                                    padding: 20px;
+                                }
+                            }
+
+                            p {
+                                position: absolute;
+                                color:$white;
+                                top:60px;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                background-color: rgba(255, 255, 255, 0.2);
+                                border-radius: 20px;
+                                margin: 15px;
+                                padding: 25px;
+                                @include box-shadow(1px, 2px, 7px, 1px, rgba($black,0.5));
+
+                                &.miniBox {
+                                    top: 100px;
+                                    padding: 25px;
+                                    border-radius: 20px 20px 22px 22px;
+                                }
+                            }
+
+                            &.bg1 {
+                                background-image: url(../images/services/tile1.png);
+                                p{
+                                    background-color: rgba(17,6,71,0.8)
+                                }
+                            }
+
+                            &.bg2 {
+                                background-image: url(../images/services/tile2.png);
+                                p{
+                                    background-color: rgba(61,81,52,0.8)
+                                }
+                               
+                            }
+
+                            &.bg3 {
+                                background-image: url(../images/services/tile3.png);
+                                p{
+                                    background-color: rgba(97,0,14,0.8);
+                                }
+                             
+                            }
+
+                            &.bg4 {
+                                background-image: url(../images/services/tile4.png);
+                                p{
+                                    background-color: rgba(29,48,52,0.8)
+                                }
+                               
+                               
+                            }
+
+                            &.bg5 {
+                                background-image: url(../images/services/tile5.png);
+                                p{
+                                    background-color: rgba(58,16,77,0.8)
+                                }
+                            }
+
+                            &.bg6 {
+                                background-image: url(../images/services/tile6.png);
+                                p{
+                                    background-color: rgba(61,29,0,0.8)
+                                }
+                            }
+
+                            &.bg7 {
+                                background-image: url(../images/services/tile7.png);
+                                p{
+                                    background-color: rgba(10,53,61,0.8)
+                                }
+                            }
+
+                            &.bg8 {
+                                background-image: url(../images/services/tile8.png);
+                                p{
+                                    background-color: rgba(73,31,22,0.8)
+                                }
+                            }
+
+
+                        }
+                    }
+                
+            }
+
+
+        }
+    }
+}

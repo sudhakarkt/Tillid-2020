@@ -1,0 +1,205 @@
+#core
+{
+    .coreLeft{
+        position: absolute;
+        left:0;
+        right: 75%;
+        height: 100%;        
+        display: flex;       
+        align-items: center;
+        ul{
+            position: absolute;
+            right: 0;
+            margin-right: 25px;
+            z-index: 1;
+            width: 50%;
+            li{
+                font-family: 'Roboto slab','sans-sarif';
+                font-size: 1.2rem;
+                font-weight: 100; 
+                line-height: 35px;  
+                color: rgba($black,0.5);
+                white-space: nowrap;
+                cursor: pointer;
+                &.active 
+                {
+                    margin-bottom: 150px;
+                    font-size: 1.6rem;
+                    font-weight: 400; 
+                    color: $black;
+                }            
+            }
+        }
+        .dots6
+        {
+            position: absolute;
+            left: 30%;
+            height: 50%;
+            top: 35%;
+            fill: rgba($mainColor,0.3);
+        }
+    }
+    .coreRight{        
+        position: absolute;
+        left:25%;
+        right: 0;
+        height: 100%;   
+      .coreContent
+      {
+        padding: 0 100px;
+          h1
+          {
+            font-family: 'Roboto Slab','sans-sarif';
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color:$mainColor;
+          }
+          p{
+            font-size: 1.1rem;
+            font-weight: 100;
+           line-height: 25px;
+            color:$black;
+          }
+          .list{
+            margin-top: 20px;
+            width:100%;
+            ul
+            {
+                display: flex;
+                
+                li
+                {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 0;
+                    h2{
+                        
+                        font-weight: 400;
+                        margin-bottom: 5px;
+                        font-size: 1.1rem;
+                    }
+                    h6{
+                        font-weight: 400;
+                        margin-bottom: 5px;
+                        font-size: 1rem;
+                        font-style: italic;;
+                    }
+                    .bottomLine
+                    {
+                        width: 30px;
+                        height: 2px;
+                        border-radius: 5px;
+                       // background-color: #DD50A5;
+                        position: absolute;
+                    }
+                    img
+                    {
+                        height: 60px;
+                        width: 60px;
+                        object-fit: cover;
+                    }
+                    
+                   
+                }
+            }
+        }
+      }
+        .cloudCore
+            {
+            display: flex;
+            justify-content: center;                
+            position: absolute;
+            height: 100%;
+            width: 100%;   
+            top:-100%;       
+            background-color: #F8F1F2;            
+            flex-direction: column;
+            
+ 
+            }
+            .sharepointCore
+            {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 100%;            
+            width: 100%;
+            top:-100%;
+            background-color: #E3F5E5; 
+            flex-direction: column;           
+            }
+            .dynamicsCore
+            {
+                display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:-100%;
+                background-color: #F8F1FF;
+                flex-direction: column;
+            }
+            .biCore
+            {
+                display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:-100%;
+                background-color: #F3F2E3;
+                flex-direction: column;
+            }
+            .uiuxCore
+            {
+                display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:-100%;
+                background-color: #E4E2F2;
+                flex-direction: column;
+            }
+            .mobileCore
+            {
+                display: flex;
+            justify-content: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:-100%;
+                background-color: #F8F1FF;
+                flex-direction: column;
+            }
+          .caseStudies
+          {
+             height: 30%;
+              position: relative;
+              .arrow{
+                  position: absolute;
+                  right: 40px;
+                  display: none;
+                  img
+                  {
+                      padding: 10px;
+                  }
+              }
+              margin-top: 50px;
+              .caseContainer{
+               
+                flex-direction: row;
+                display: none;
+                &.active{
+                    display: flex;
+                }
+                  .case
+                  {
+                    padding: 0 40px 0 0;
+                    line-height: 20px;
+                  }
+              }
+          }
+        
+    }
+}
