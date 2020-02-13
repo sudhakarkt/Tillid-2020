@@ -63,8 +63,9 @@
                 font-size: 3rem;
                 color: #06004D;
                 position: absolute;
-                left: -15%;
-                top: 10%;
+                left: -60px;
+                margin: 0;
+                top: 56px;
                 font-weight: 600;
                 z-index: 2;
             }
@@ -80,13 +81,13 @@
             .socialIcon
             {
                 position: absolute;
-                right: 25px;
+                right: 8%;
                 top: 10px;
-                padding: 10px;
+                padding: 0px;
                 img
                 {
                     width: 30px;
-                    margin-right: 10px;
+                    margin-left: 10px;
                     height: 30px;
                     object-fit: contain;
                 }

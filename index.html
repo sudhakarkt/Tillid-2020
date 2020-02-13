@@ -18,20 +18,20 @@
 </head>
 
 <body>
-
   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <span class="logoTxt d-lg-inline-block d-none"> <img src="./images/logo_txt.svg" alt=""> </span>
       <i class="logoBox fa fa-star d-inline-block d-lg-none"> <img src="./images/Tillid.svg" alt=""> </i>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <div class="collapse navbar-collapse">
+      <span class="menu-close"><img alt="" width="20" height="20" src="./images/cancel.png"></span>
       <ul class="navbar-nav menuFix">
-        <li class="nav-item" page-id="home"> <a class="nav-link" href="#"><img src="./images/home.svg"></a> </li>
+        <li class="nav-item active" page-id="home"> <a class="nav-link" href="#"><img alt="" class="hide-mobile" src="./images/home.svg">
+          <span class="hide-desktop">HOME</span></a> </li>
         <li class="nav-item" page-id="aboutus"> <a class="nav-link" href="#">About Us</a> </li>
         <!-- <li class="nav-item" page-id="whoweare"> <a class="nav-link" href="#">Who We Are?</a> </li> -->
         <!-- <li class="nav-item" page-id="whatwedo"> <a class="nav-link" href="#">What we do?</a> </li> -->
@@ -45,6 +45,7 @@
 
       </ul>
     </div>
+    <div class="menu-overlay"></div>
   </nav>
   <div class="logo"></div>
 
@@ -54,34 +55,6 @@
   <section class="section1 d-none active" id="home" >
     
     <div class="contentContaner">
-      <div class="testimonialFixed">
-     
-        <div class="testimo">
-          <div class="titleHead">What our customers say:</div>
-          <h1>Kris Gustafson <span>President & CFO | Northern Investors Company</span></h1>
-          <h3>
-            We’ve been using Tillid for our web development and implementation since their inception. They have always been very knowledgeable and helpful during 
-            the various phases of our projects. In our 10 plus years, we haven’t run into a situation where we were told the project wasn’t feasible or they didn’t have the resources to 
-              accomplish our requests. We are very pleased with the services provided!
-          </h3>
-        </div>
-        <div class="testimo">
-          <h1>Jerry Sauder<span>National Practice Lead - Portals | Core BTS</span></h1>
-          <h3>
-            Tillid Soft’s level of expertise and professionalism is nothing less than stellar. 
-            Tillid Soft is a valued partner to Core BTS’s delivery of exceptional results to our SharePoint customers. 
-            We look forward to many more successful projects with their team!
-          </h3>
-        </div>
-       <!-- <div class="testimo">
-        <h1>Kris Gustafson <span>President & CFO | Northern Investors Company</span></h1>
-          <h3>
-            We’ve been using Tillid for our web development and implementation since their inception. They have always been very knowledgeable and helpful during 
-            the various phases of our projects. In our 10 plus years, we haven’t run into a situation where we were told the project wasn’t feasible or they didn’t have the resources to 
-              accomplish our requests. We are very pleased with the services provided!
-          </h3> 
-        </div>-->
-      </div>
       <div class="leftContainer">
       
         <div class="content" id="slide1">
@@ -500,6 +473,34 @@
 
           </svg>
         </div>
+      </div>
+      <div class="testimonialFixed">
+     
+        <div class="testimo">
+          <div class="titleHead">What our customers say:</div>
+          <h1>Kris Gustafson <span>President & CFO | Northern Investors Company</span></h1>
+          <h3>
+            We’ve been using Tillid for our web development and implementation since their inception. They have always been very knowledgeable and helpful during 
+            the various phases of our projects. In our 10 plus years, we haven’t run into a situation where we were told the project wasn’t feasible or they didn’t have the resources to 
+              accomplish our requests. We are very pleased with the services provided!
+          </h3>
+        </div>
+        <div class="testimo">
+          <h1>Jerry Sauder<span>National Practice Lead - Portals | Core BTS</span></h1>
+          <h3>
+            Tillid Soft’s level of expertise and professionalism is nothing less than stellar. 
+            Tillid Soft is a valued partner to Core BTS’s delivery of exceptional results to our SharePoint customers. 
+            We look forward to many more successful projects with their team!
+          </h3>
+        </div>
+       <!-- <div class="testimo">
+        <h1>Kris Gustafson <span>President & CFO | Northern Investors Company</span></h1>
+          <h3>
+            We’ve been using Tillid for our web development and implementation since their inception. They have always been very knowledgeable and helpful during 
+            the various phases of our projects. In our 10 plus years, we haven’t run into a situation where we were told the project wasn’t feasible or they didn’t have the resources to 
+              accomplish our requests. We are very pleased with the services provided!
+          </h3> 
+        </div>-->
       </div>
     </div>
 
@@ -1907,12 +1908,12 @@
           <div class="caseContainer active" id="case1">
             <div class="case" case-id="case1">
               Successful upgrade of Dynamics GP for a major Government organization from a 10 year old version to GP
-              2013 R2, along with the users, customizations, 3rd party reports etc.,; all these in a new server
-              environment and providing end user traning and support.
+              2013 R2, along with the users, customizations, 3rd party reports etc, all these in a new server
+              environment and providing end user training and support.
             </div>
             <div class="case" case-id="case1">
               An US based consumer sales vertical, providing in-shop purchase option as well as online purchase options
-              to its customers. Implemented seamless integration using econnect and webserivces to facilitate the
+              to its customers. Implemented seamless integration using econnect and webservices to facilitate the
               transactions between GP and the online stores.
             </div>
           </div>
@@ -2064,7 +2065,7 @@
             <div class="case" case-id="case1">
               We rebranded & rebuilt a new Web Portal for a financial institution in USA. Our UI experts built an
               excellent UI/UX both visually appealing and also enabling the portal users focus on business financial
-              detail with very less erroraneous cases.
+              detail with very less erroneous cases.
             </div>
             <div class="case" case-id="case1">
               Our team has helped a leading nationalized bank develop a SharePoint based UI/UX that had a stunning look.

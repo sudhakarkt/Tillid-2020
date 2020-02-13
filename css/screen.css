@@ -116,8 +116,8 @@ embed {
   background-image: url("../images/tillid.svg");
   background-size: 80px 80px;
   background-repeat: no-repeat;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   position: fixed;
   top: 30%;
   left: 0;
@@ -358,14 +358,14 @@ footer {
 /* line 20, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed {
   position: absolute;
-  bottom: 10%;
+  bottom: 80px;
   width: 86%;
   justify-content: left;
   display: flex;
   flex: 1;
   z-index: 10;
 }
-/* line 28, ../sass/pages/_home.scss */
+/* line 29, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed .testimo {
   display: flex;
   flex-direction: column;
@@ -374,7 +374,7 @@ footer {
   background-color: rgba(221, 221, 230, 0.9);
   margin: 10px;
 }
-/* line 37, ../sass/pages/_home.scss */
+/* line 38, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed .testimo .titleHead {
   position: absolute;
   top: -30px;
@@ -382,7 +382,7 @@ footer {
   font-style: italic;
   color: #525071;
 }
-/* line 46, ../sass/pages/_home.scss */
+/* line 47, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed .testimo h1 {
   font-style: italic;
   text-align: left;
@@ -390,13 +390,13 @@ footer {
   font-weight: 500;
   color: #544967;
 }
-/* line 53, ../sass/pages/_home.scss */
+/* line 54, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed .testimo h1 span {
   font-size: 0.9rem;
   display: block;
   padding-top: 5px;
 }
-/* line 60, ../sass/pages/_home.scss */
+/* line 61, ../sass/pages/_home.scss */
 #home .contentContaner .testimonialFixed .testimo h3 {
   color: #544967;
   font-size: 1.1rem;
@@ -404,27 +404,25 @@ footer {
   font-style: italic;
   line-height: 20px;
 }
-/* line 70, ../sass/pages/_home.scss */
+/* line 71, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer {
-  position: absolute;
   height: 100%;
-  left: 0;
-  right: 40%;
+  width: 86%;
+  position: absolute;
 }
-/* line 75, ../sass/pages/_home.scss */
+/* line 78, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .content {
   position: absolute;
-  left: 37%;
-  top: 30%;
-  transform: translate(-35%, -50%);
-  width: 70%;
+  left: 20px;
+  top: 15%;
+  width: 50%;
 }
-/* line 81, ../sass/pages/_home.scss */
+/* line 84, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .content .maskBox {
   position: relative;
   overflow: hidden;
 }
-/* line 84, ../sass/pages/_home.scss */
+/* line 87, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .content .maskBox h1 {
   font-family: 'Roboto Slab',sans-serif;
   font-size: 3.5rem;
@@ -433,7 +431,7 @@ footer {
   color: #06004D;
   transform: translate(0, 100%);
 }
-/* line 94, ../sass/pages/_home.scss */
+/* line 97, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .content h2 {
   font-size: 2rem;
   margin-top: 15px;
@@ -442,7 +440,7 @@ footer {
   font-weight: 100;
   transform: translate(0, 100%);
 }
-/* line 104, ../sass/pages/_home.scss */
+/* line 107, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial {
   position: absolute;
   left: 37%;
@@ -457,7 +455,7 @@ footer {
   padding: 15px;
   flex-direction: column;
 }
-/* line 119, ../sass/pages/_home.scss */
+/* line 122, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .titleHead {
   position: absolute;
   top: -30px;
@@ -465,14 +463,14 @@ footer {
   font-style: italic;
   color: #8c79ad;
 }
-/* line 127, ../sass/pages/_home.scss */
+/* line 130, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .testiMask {
   overflow: hidden;
   width: 100%;
   min-height: 50px;
   position: relative;
 }
-/* line 135, ../sass/pages/_home.scss */
+/* line 138, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .testiMask h1 {
   font-style: italic;
   text-align: left;
@@ -485,13 +483,13 @@ footer {
   margin-bottom: 5px;
   padding-left: 5px;
 }
-/* line 149, ../sass/pages/_home.scss */
+/* line 152, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .testiMask h1 span {
   font-size: 0.9rem;
   display: block;
   padding-top: 5px;
 }
-/* line 156, ../sass/pages/_home.scss */
+/* line 159, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .testiMask h3 {
   color: #544967;
   font-size: 1.1rem;
@@ -503,26 +501,26 @@ footer {
   position: absolute;
   margin-top: 5px;
 }
-/* line 170, ../sass/pages/_home.scss */
+/* line 173, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .testiMask2 {
   display: flex;
   min-height: 90px;
   align-items: center;
 }
-/* line 177, ../sass/pages/_home.scss */
+/* line 180, ../sass/pages/_home.scss */
 #home .contentContaner .leftContainer .testimonial .dividBar {
   height: 1px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.4);
 }
-/* line 186, ../sass/pages/_home.scss */
+/* line 189, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer {
   position: absolute;
   height: 100%;
   left: 60%;
   right: 0;
 }
-/* line 191, ../sass/pages/_home.scss */
+/* line 194, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer .rightBox {
   position: absolute;
   height: 70%;
@@ -531,17 +529,17 @@ footer {
   left: 50%;
   transform: translate(-50%, -70%);
 }
-/* line 198, ../sass/pages/_home.scss */
+/* line 201, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer .rightBox img {
   position: absolute;
   z-index: 5;
   height: 100%;
 }
-/* line 205, ../sass/pages/_home.scss */
+/* line 208, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer #svgPathBlueRight {
   fill: #06004D;
 }
-/* line 208, ../sass/pages/_home.scss */
+/* line 211, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer .dots {
   position: absolute;
   left: -50px;
@@ -550,7 +548,7 @@ footer {
   width: 100%;
   height: 100%;
 }
-/* line 216, ../sass/pages/_home.scss */
+/* line 219, ../sass/pages/_home.scss */
 #home .contentContaner .rightContainer .dots #trackTop1 {
   fill: red;
 }
@@ -563,7 +561,7 @@ footer {
   display: flex;
   justify-content: left;
   align-items: center;
-  left: 7%;
+  left: 90px;
 }
 /* line 13, ../sass/pages/_aboutus.scss */
 #aboutus .leftContainer .whyTillid {
@@ -635,7 +633,7 @@ footer {
   background-color: #ffdeff;
   position: absolute;
   left: 0;
-  bottom: 17%;
+  bottom: 22%;
 }
 /* line 75, ../sass/pages/_aboutus.scss */
 #aboutus .rightContainer .mision h1 {
@@ -941,12 +939,13 @@ footer {
   font-size: 3rem;
   color: #06004D;
   position: absolute;
-  left: -15%;
-  top: 10%;
+  left: -60px;
+  margin: 0;
+  top: 56px;
   font-weight: 600;
   z-index: 2;
 }
-/* line 71, ../sass/pages/_contacts.scss */
+/* line 72, ../sass/pages/_contacts.scss */
 #contacts .contactRight .socialBox .dots5 {
   position: absolute;
   left: -60px;
@@ -956,17 +955,17 @@ footer {
   fill: rgba(6, 0, 77, 0.6);
   z-index: 1;
 }
-/* line 80, ../sass/pages/_contacts.scss */
+/* line 81, ../sass/pages/_contacts.scss */
 #contacts .contactRight .socialBox .socialIcon {
   position: absolute;
-  right: 25px;
+  right: 8%;
   top: 10px;
-  padding: 10px;
+  padding: 0px;
 }
-/* line 86, ../sass/pages/_contacts.scss */
+/* line 87, ../sass/pages/_contacts.scss */
 #contacts .contactRight .socialBox .socialIcon img {
   width: 30px;
-  margin-right: 10px;
+  margin-left: 10px;
   height: 30px;
   object-fit: contain;
 }
@@ -985,10 +984,12 @@ footer {
   position: absolute;
   right: 0;
   margin-right: 25px;
+  margin-bottom: 0px;
+  margin-top: 40px;
   z-index: 1;
   width: 50%;
 }
-/* line 16, ../sass/pages/_core.scss */
+/* line 18, ../sass/pages/_core.scss */
 #core .coreLeft ul li {
   font-family: 'Roboto slab','sans-sarif';
   font-size: 1.2rem;
@@ -998,14 +999,14 @@ footer {
   white-space: nowrap;
   cursor: pointer;
 }
-/* line 24, ../sass/pages/_core.scss */
+/* line 26, ../sass/pages/_core.scss */
 #core .coreLeft ul li.active {
   margin-bottom: 150px;
   font-size: 1.6rem;
   font-weight: 400;
   color: #000000;
 }
-/* line 33, ../sass/pages/_core.scss */
+/* line 35, ../sass/pages/_core.scss */
 #core .coreLeft .dots6 {
   position: absolute;
   left: 30%;
@@ -1013,73 +1014,73 @@ footer {
   top: 35%;
   fill: rgba(6, 0, 77, 0.3);
 }
-/* line 42, ../sass/pages/_core.scss */
+/* line 44, ../sass/pages/_core.scss */
 #core .coreRight {
   position: absolute;
   left: 25%;
   right: 0;
   height: 100%;
 }
-/* line 47, ../sass/pages/_core.scss */
+/* line 49, ../sass/pages/_core.scss */
 #core .coreRight .coreContent {
   padding: 0 100px;
 }
-/* line 50, ../sass/pages/_core.scss */
+/* line 52, ../sass/pages/_core.scss */
 #core .coreRight .coreContent h1 {
   font-family: 'Roboto Slab','sans-sarif';
   font-size: 1.8rem;
   margin-bottom: 10px;
   color: #06004D;
 }
-/* line 57, ../sass/pages/_core.scss */
+/* line 59, ../sass/pages/_core.scss */
 #core .coreRight .coreContent p {
   font-size: 1.1rem;
   font-weight: 100;
   line-height: 25px;
   color: #000000;
 }
-/* line 63, ../sass/pages/_core.scss */
+/* line 65, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list {
   margin-top: 20px;
   width: 100%;
 }
-/* line 66, ../sass/pages/_core.scss */
+/* line 68, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul {
   display: flex;
 }
-/* line 70, ../sass/pages/_core.scss */
+/* line 72, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul li {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
 }
-/* line 75, ../sass/pages/_core.scss */
+/* line 77, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul li h2 {
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 1.1rem;
 }
-/* line 81, ../sass/pages/_core.scss */
+/* line 83, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul li h6 {
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 1rem;
   font-style: italic;
 }
-/* line 87, ../sass/pages/_core.scss */
+/* line 89, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul li .bottomLine {
   width: 30px;
   height: 2px;
   border-radius: 5px;
   position: absolute;
 }
-/* line 95, ../sass/pages/_core.scss */
+/* line 97, ../sass/pages/_core.scss */
 #core .coreRight .coreContent .list ul li img {
   height: 60px;
   width: 60px;
   object-fit: cover;
 }
-/* line 107, ../sass/pages/_core.scss */
+/* line 109, ../sass/pages/_core.scss */
 #core .coreRight .cloudCore {
   display: flex;
   justify-content: center;
@@ -1090,7 +1091,7 @@ footer {
   background-color: #F8F1F2;
   flex-direction: column;
 }
-/* line 120, ../sass/pages/_core.scss */
+/* line 122, ../sass/pages/_core.scss */
 #core .coreRight .sharepointCore {
   display: flex;
   justify-content: center;
@@ -1101,7 +1102,7 @@ footer {
   background-color: #E3F5E5;
   flex-direction: column;
 }
-/* line 131, ../sass/pages/_core.scss */
+/* line 133, ../sass/pages/_core.scss */
 #core .coreRight .dynamicsCore {
   display: flex;
   justify-content: center;
@@ -1112,7 +1113,7 @@ footer {
   background-color: #F8F1FF;
   flex-direction: column;
 }
-/* line 142, ../sass/pages/_core.scss */
+/* line 144, ../sass/pages/_core.scss */
 #core .coreRight .biCore {
   display: flex;
   justify-content: center;
@@ -1123,7 +1124,7 @@ footer {
   background-color: #F3F2E3;
   flex-direction: column;
 }
-/* line 153, ../sass/pages/_core.scss */
+/* line 155, ../sass/pages/_core.scss */
 #core .coreRight .uiuxCore {
   display: flex;
   justify-content: center;
@@ -1134,7 +1135,7 @@ footer {
   background-color: #E4E2F2;
   flex-direction: column;
 }
-/* line 164, ../sass/pages/_core.scss */
+/* line 166, ../sass/pages/_core.scss */
 #core .coreRight .mobileCore {
   display: flex;
   justify-content: center;
@@ -1145,33 +1146,776 @@ footer {
   background-color: #F8F1FF;
   flex-direction: column;
 }
-/* line 175, ../sass/pages/_core.scss */
+/* line 177, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies {
   height: 30%;
   position: relative;
   margin-top: 50px;
 }
-/* line 179, ../sass/pages/_core.scss */
+/* line 181, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies .arrow {
   position: absolute;
   right: 40px;
   display: none;
 }
-/* line 183, ../sass/pages/_core.scss */
+/* line 185, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies .arrow img {
   padding: 10px;
 }
-/* line 189, ../sass/pages/_core.scss */
+/* line 191, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies .caseContainer {
   flex-direction: row;
   display: none;
 }
-/* line 193, ../sass/pages/_core.scss */
+/* line 195, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies .caseContainer.active {
   display: flex;
 }
-/* line 196, ../sass/pages/_core.scss */
+/* line 198, ../sass/pages/_core.scss */
 #core .coreRight .caseStudies .caseContainer .case {
   padding: 0 40px 0 0;
   line-height: 20px;
+}
+
+/* line 1, ../sass/pages/responsive.scss */
+.navbar .navbar-nav li:first-child:not(.active) img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+/* line 6, ../sass/pages/responsive.scss */
+.lock-scroll {
+  overflow: hidden;
+  transition: all ease 0.5s;
+  padding-right: 17px;
+}
+
+/* line 12, ../sass/pages/responsive.scss */
+.hide-mobile {
+  display: block;
+}
+
+/* line 16, ../sass/pages/responsive.scss */
+.hide-desktop {
+  display: none;
+}
+
+/* line 20, ../sass/pages/responsive.scss */
+.menu-close {
+  display: none;
+}
+
+/* line 24, ../sass/pages/responsive.scss */
+.menu-overlay.show {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* line 29, ../sass/pages/responsive.scss */
+.section1 {
+  overflow: hidden;
+}
+
+@media all and (-ms-high-contrast: none) {
+  /* line 36, ../sass/pages/responsive.scss */
+  .leftContainer, .testimonialFixed {
+    left: 100px;
+  }
+
+  /* line 40, ../sass/pages/responsive.scss */
+  #contacts .contactRight {
+    margin-top: 6%;
+    align-items: flex-start;
+  }
+
+  /* line 45, ../sass/pages/responsive.scss */
+  #core .coreLeft ul {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 375px) {
+  /* line 52, ../sass/pages/responsive.scss */
+  body {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  /* line 59, ../sass/pages/responsive.scss */
+  html, body {
+    font-size: 13px;
+  }
+
+  /* line 63, ../sass/pages/responsive.scss */
+  section {
+    margin-top: 80px;
+    height: calc(100% - 80px);
+  }
+
+  /* line 68, ../sass/pages/responsive.scss */
+  .section1 {
+    overflow: auto;
+  }
+
+  /* line 72, ../sass/pages/responsive.scss */
+  section.section1 {
+    margin-top: 65px;
+    height: calc(100% - 65px);
+  }
+
+  /* line 77, ../sass/pages/responsive.scss */
+  .hide-mobile {
+    display: none;
+  }
+
+  /* line 81, ../sass/pages/responsive.scss */
+  .hide-desktop {
+    display: block;
+  }
+
+  /* line 85, ../sass/pages/responsive.scss */
+  .menu-overlay {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all ease 1s;
+  }
+
+  /* line 97, ../sass/pages/responsive.scss */
+  .menu-overlay.show {
+    position: fixed;
+    z-index: 99999999;
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  /* line 104, ../sass/pages/responsive.scss */
+  .menu-close {
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    height: 47px;
+    width: 47px;
+    opacity: 0.6;
+    cursor: pointer;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @-moz-keyframes spin {
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  /* line 123, ../sass/pages/responsive.scss */
+  .show .menu-close {
+    -webkit-animation: spin 1s linear;
+    -moz-animation: spin 1s linear;
+    animation: spin 1s linear;
+  }
+
+  /* line 129, ../sass/pages/responsive.scss */
+  .menu-close:hover {
+    opacity: 0.2;
+  }
+
+  /* line 133, ../sass/pages/responsive.scss */
+  .navbar .navbar-nav li.active {
+    background-color: rgba(44, 72, 136, 0.61) !important;
+  }
+
+  /* line 137, ../sass/pages/responsive.scss */
+  .navbar .navbar-nav li:not(.active):hover {
+    background-color: rgba(84, 79, 79, 0.77) !important;
+  }
+
+  /* line 141, ../sass/pages/responsive.scss */
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-light {
+    background-color: #FFF !important;
+    box-shadow: 0px 0 5px rgba(0, 0, 0, 0.35);
+    z-index: 9999999;
+    padding: 2px 0 0 0 !important;
+  }
+  /* line 147, ../sass/pages/responsive.scss */
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-light ul {
+    margin: 0px;
+    width: 100%;
+  }
+  /* line 151, ../sass/pages/responsive.scss */
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-light ul li {
+    display: block;
+    padding: 0px !important;
+    border-radius: 0px;
+    margin: 0;
+  }
+  /* line 157, ../sass/pages/responsive.scss */
+  nav.navbar.fixed-top.navbar-expand-lg.navbar-light ul li a {
+    display: block;
+    padding: 15px 15px !important;
+    font-size: 1.3rem;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    color: #FFF !important;
+  }
+
+  /* line 182, ../sass/pages/responsive.scss */
+  .navbar-collapse.collapse {
+    transition: all ease 0.5s;
+    display: block !important;
+    background: rgba(0, 0, 0, 0.93);
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    right: -600px;
+    top: 0;
+    bottom: 0;
+    z-index: 999999999;
+  }
+
+  /* line 195, ../sass/pages/responsive.scss */
+  .show .navbar-collapse.collapse {
+    right: 0;
+  }
+
+  /* line 199, ../sass/pages/responsive.scss */
+  .navbar-light .navbar-toggler {
+    margin-right: 15px;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+  }
+
+  /* line 211, ../sass/pages/responsive.scss */
+  .navbar-toggler:focus {
+    outline: none;
+  }
+
+  /* line 215, ../sass/pages/responsive.scss */
+  .navbar-brand {
+    height: 60px;
+    padding-left: 5px;
+  }
+
+  /* line 220, ../sass/pages/responsive.scss */
+  .logo {
+    display: none;
+  }
+
+  /* line 224, ../sass/pages/responsive.scss */
+  #svgHomeLeft {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0 0 !important;
+    left: 0%;
+  }
+
+  /* line 232, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 250px;
+    padding: 15px;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  /* line 242, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer {
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+  }
+
+  /* line 248, ../sass/pages/responsive.scss */
+  #home .contentContaner {
+    position: relative;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  /* line 255, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content .maskBox h1 {
+    font-size: 2.1rem;
+  }
+
+  /* line 259, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content .maskBox h2 {
+    line-height: 35px;
+    font-size: 1.7rem;
+  }
+
+  /* line 266, ../sass/pages/responsive.scss */
+  #home .contentContaner .testimonialFixed {
+    width: 100%;
+    bottom: 30px;
+    position: relative;
+  }
+  /* line 270, ../sass/pages/responsive.scss */
+  #home .contentContaner .testimonialFixed .testimo {
+    width: 100%;
+  }
+
+  /* line 277, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer {
+    margin-bottom: 20px;
+  }
+
+  /* line 281, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer .whyTillid {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    top: inherit;
+  }
+
+  /* line 288, ../sass/pages/responsive.scss */
+  #home .contentContaner .rightContainer {
+    display: none;
+  }
+
+  /* line 292, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer, #aboutus .rightContainer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    align-items: flex-start;
+    left: 0;
+  }
+
+  /* line 300, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer {
+    width: 100%;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* line 309, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .vision, #aboutus .rightContainer .mision {
+    position: relative;
+    left: 0;
+    width: 80%;
+    max-width: 80%;
+    margin-bottom: 50px;
+    top: auto;
+  }
+
+  /* line 318, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .vision {
+    margin-left: 20px;
+    margin-right: auto;
+  }
+
+  /* line 323, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .mision {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  /* line 328, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .rightColorBox {
+    position: absolute;
+    height: 100%;
+    left: 10%;
+  }
+
+  /* line 334, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .imageBox {
+    display: none;
+  }
+
+  /* line 338, ../sass/pages/responsive.scss */
+  #core .coreLeft ul {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+    left: 0px;
+    z-index: 9999;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 349, ../sass/pages/responsive.scss */
+  #core .coreLeft ul li {
+    padding: 0 10px;
+    margin: 5px 5px;
+  }
+
+  /* line 356, ../sass/pages/responsive.scss */
+  #core .coreRight {
+    left: 0;
+    position: relative;
+  }
+
+  /* line 361, ../sass/pages/responsive.scss */
+  #core .coreRight .cloudCore, #core .coreRight .sharepointCore, #core .coreRight .dynamicsCore, #core .coreRight .biCore, #core .coreRight .uiuxCore, #core .coreRight .mobileCore {
+    justify-content: flex-start;
+  }
+
+  /* line 365, ../sass/pages/responsive.scss */
+  .coreContent.active > h1 {
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+
+  /* line 370, ../sass/pages/responsive.scss */
+  #core .coreRight .cloudCore,
+  #core .coreRight .sharepointCore,
+  #core .coreRight .dynamicsCore,
+  #core .coreRight .biCore,
+  #core .coreRight .uiuxCore,
+  #core .coreRight .mobileCore {
+    justify-content: flex-start;
+  }
+
+  /* line 379, ../sass/pages/responsive.scss */
+  #core .coreRight .cloudCore > div {
+    background-color: #F8F1F2;
+  }
+
+  /* line 383, ../sass/pages/responsive.scss */
+  #core .coreRight .sharepointCore > div {
+    background-color: #E3F5E5;
+  }
+
+  /* line 387, ../sass/pages/responsive.scss */
+  #core .coreRight .dynamicsCore > div {
+    background-color: #F8F1FF;
+  }
+
+  /* line 391, ../sass/pages/responsive.scss */
+  #core .coreRight .biCore > div {
+    background-color: #F3F2E3;
+  }
+
+  /* line 395, ../sass/pages/responsive.scss */
+  #core .coreRight .uiuxCore > div {
+    background-color: #E4E2F2;
+  }
+
+  /* line 399, ../sass/pages/responsive.scss */
+  #core .coreRight .mobileCore > div {
+    background-color: #F8F1FF;
+  }
+
+  /* line 403, ../sass/pages/responsive.scss */
+  #core .coreRight .caseStudies .caseContainer .case {
+    line-height: 25px;
+  }
+
+  /* line 407, ../sass/pages/responsive.scss */
+  .coreContent.active .content, .coreContent.active .list, .coreContent.active .caseStudies {
+    padding: 0 15px;
+  }
+
+  /* line 411, ../sass/pages/responsive.scss */
+  .coreContent.active .caseStudies .case {
+    padding: 0px !important;
+  }
+
+  /* line 415, ../sass/pages/responsive.scss */
+  #core .coreRight .coreContent {
+    padding: 15px 15px;
+    margin-top: 15px;
+  }
+
+  /* line 420, ../sass/pages/responsive.scss */
+  #core .coreContent {
+    opacity: 0 !important;
+  }
+
+  /* line 424, ../sass/pages/responsive.scss */
+  #core .coreContent.active {
+    opacity: 1 !important;
+    padding: 0px;
+  }
+
+  /* line 429, ../sass/pages/responsive.scss */
+  #core .coreLeft {
+    position: relative;
+    left: 5%;
+    align-items: flex-start;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  /* line 439, ../sass/pages/responsive.scss */
+  #core .coreLeft .dots6 {
+    left: -10px;
+    top: -40px;
+    display: none;
+  }
+
+  /* line 445, ../sass/pages/responsive.scss */
+  #core .coreRight .caseStudies .caseContainer.active {
+    flex-direction: column;
+  }
+
+  /* line 449, ../sass/pages/responsive.scss */
+  #core .coreRight .caseStudies .caseContainer .case {
+    margin-bottom: 15px;
+  }
+
+  /* line 453, ../sass/pages/responsive.scss */
+  #core .coreRight .coreContent .list ul {
+    flex-direction: column;
+  }
+  /* line 456, ../sass/pages/responsive.scss */
+  #core .coreRight .coreContent .list ul li {
+    margin-bottom: 5px;
+  }
+
+  /* line 462, ../sass/pages/responsive.scss */
+  #core .coreRight #mobile .list ul, #core .coreRight #uiux .list ul {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  /* line 467, ../sass/pages/responsive.scss */
+  #core .coreRight #mobile .list ul li, #core .coreRight #uiux .list ul li {
+    text-align: center;
+  }
+
+  /* line 472, ../sass/pages/responsive.scss */
+  #core .coreRight #uiux .list ul li {
+    max-width: 33%;
+    width: 33%;
+    flex-basis: auto;
+    margin-bottom: 30px;
+  }
+
+  /* line 479, ../sass/pages/responsive.scss */
+  #core .coreRight #uiux .list ul {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* line 486, ../sass/pages/responsive.scss */
+  #core .coreRight .caseStudies {
+    margin-top: 0px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  /* line 492, ../sass/pages/responsive.scss */
+  #contacts .contactRight {
+    left: 0%;
+    height: calc(100% - 80px);
+  }
+
+  /* line 497, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 502, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox h1 {
+    top: 60px;
+    left: 10px;
+  }
+
+  /* line 507, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox .dots5 {
+    left: -160px;
+  }
+
+  /* line 511, ../sass/pages/responsive.scss */
+  #contacts .contactleft {
+    right: 0%;
+    left: 26%;
+    margin-top: 0px;
+    justify-content: flex-start;
+    top: 150px;
+    height: auto;
+  }
+
+  /* line 520, ../sass/pages/responsive.scss */
+  #contacts .contactleft h1 {
+    font-size: 1.25rem;
+  }
+
+  /* line 524, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox .socialIcon img {
+    width: 20px;
+    margin-left: 5px;
+    height: 20px;
+  }
+
+  /* line 530, ../sass/pages/responsive.scss */
+  #svgContactBg, #svgContact, #contacts .dots5 {
+    min-height: 390px;
+  }
+
+  /* line 534, ../sass/pages/responsive.scss */
+  footer {
+    position: fixed;
+    background-color: #FFF;
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* line 544, ../sass/pages/responsive.scss */
+  html, body {
+    font-size: 12px;
+  }
+
+  /* line 548, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer .whyTillid p {
+    line-height: 22px;
+  }
+
+  /* line 552, ../sass/pages/responsive.scss */
+  #core .coreRight .caseStudies {
+    margin-top: 25px;
+  }
+
+  /* line 556, ../sass/pages/responsive.scss */
+  #core .coreRight .coreContent {
+    padding: 0 50px;
+  }
+
+  /* line 560, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1366px) {
+  /* line 567, ../sass/pages/responsive.scss */
+  html, body {
+    font-size: 13px;
+  }
+
+  /* line 571, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content h2 {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  /* line 578, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  /* line 583, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content .maskBox h1 {
+    font-size: 2.5rem;
+  }
+
+  /* line 587, ../sass/pages/responsive.scss */
+  #home .contentContaner .testimonialFixed {
+    bottom: 50px;
+  }
+
+  /* line 591, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer .whyTillid p {
+    font-size: 1rem;
+  }
+
+  /* line 595, ../sass/pages/responsive.scss */
+  #core .coreLeft ul {
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+
+  /* line 601, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox h1 {
+    top: 61px;
+  }
+
+  /* line 605, ../sass/pages/responsive.scss */
+  #aboutus .rightContainer .mision {
+    bottom: 50px;
+  }
+
+  /* line 609, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox .socialIcon img {
+    width: 20px;
+    margin-left: 5px;
+    height: 20px;
+  }
+
+  /* line 615, ../sass/pages/responsive.scss */
+  footer {
+    height: 50px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1600px) {
+  /* line 623, ../sass/pages/responsive.scss */
+  html, body {
+    font-size: 13px;
+  }
+
+  /* line 627, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content .maskBox h1 {
+    font-size: 2.6rem;
+  }
+
+  /* line 631, ../sass/pages/responsive.scss */
+  #home .contentContaner .leftContainer .content h2 {
+    font-size: 1.8rem;
+  }
+
+  /* line 635, ../sass/pages/responsive.scss */
+  #home .contentContaner .testimonialFixed {
+    bottom: 60px;
+  }
+
+  /* line 639, ../sass/pages/responsive.scss */
+  #aboutus .leftContainer .whyTillid p {
+    font-size: 1.1rem;
+  }
+
+  /* line 645, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox h1 {
+    top: 61px;
+  }
+
+  /* line 649, ../sass/pages/responsive.scss */
+  #contacts .contactRight .socialBox .socialIcon img {
+    width: 20px;
+    margin-left: 5px;
+    height: 20px;
+  }
+
+  /* line 655, ../sass/pages/responsive.scss */
+  footer {
+    height: 60px;
+  }
 }

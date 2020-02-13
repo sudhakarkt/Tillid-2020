@@ -45,6 +45,7 @@ $(document).ready(function () {
     var currentServiceId =0;
     var activeSericeId;
     $(document).ready(function () {
+  
         homeIn();
     });
 
@@ -98,6 +99,8 @@ $(document).ready(function () {
         css: { fontWeight: 600, color: "rgba(0, 0, 0, 0.85)" }
     });
 
+        if(id != "mcloud")
+        {
             tlleftMenu.to("#" + id, 0.2, {
                 css: {
                     fontSize: "1.2rem",
@@ -105,6 +108,8 @@ $(document).ready(function () {
                     color: "rgba(0, 0, 0, 0.5)"
                 }
             });
+        }
+           
           var  getCoreActiveId = $(".coreContent")
                 .filter(".active")
                 .attr("id");
@@ -369,10 +374,8 @@ $(document).ready(function () {
     }
 
     function homeOut() {
-    
         tlHome.timeScale(2);
-        tlHome.reverse();
-       
+        tlHome.reverse();      
 
          tlslider1.pause();  
          tlslider2.pause();        
@@ -387,7 +390,7 @@ $(document).ready(function () {
 
     //about us
 
-    tlAboutUs.from(".whyTillid>h1", {autoAlpha: 0, y: -50},"=+1")
+    tlAboutUs.from(".whyTillid>h1", {autoAlpha: 0, y: -50},"=+2")
     .from(".whyTillid>p", {autoAlpha: 0})
     .from(".rightColorBox", {autoAlpha: 0},"=-0.3")
     .fromTo(".imageBox",1, {autoAlpha: 0, scaleX: 0, scaleY: 0,},{autoAlpha: 1, scaleX: 1, scaleY: 1,ease: "elastic.out(1, 0.3)"},"=-0.5")
@@ -450,173 +453,173 @@ $(document).ready(function () {
    
       
 
-             window.addEventListener("wheel", () => {
-                if(serviceActive==1)
-                {          
+            //  window.addEventListener("wheel", () => {
+            //     if(serviceActive==1)
+            //     {          
                
-                    heightf = $(".ulBox").height();
-                    heightBg = $(".skillBox").height();
-                    const delta = Math.sign(event.deltaY);                  
+            //         heightf = $(".ulBox").height();
+            //         heightBg = $(".skillBox").height();
+            //         const delta = Math.sign(event.deltaY);                  
                     
-                    if(count == 0 || count == skillCount - 1) {
-                        isAnimating = false;
-                    }
-                    if(!isAnimating) {
-                        if(delta > 0 && count < skillCount - 1) {
-                            var previousId = $(".title").eq(count).attr("id");
-                            var currentId = $(".title").eq(count + 1).attr("id");
-                            activeSericeId = currentId;
-                            gsap.to("#" + previousId, {
-                                duration: duration,
-                                autoAlpha: 0.2
-                            });
-                            gsap.to("#" + previousId + ">h1", {
-                                css: {
-                                    fontSize: "1.5rem"
-                                }
-                            });
-                            gsap.to("#" + currentId, {
-                                duration: duration,
-                                autoAlpha: 1
-                            });
-                            gsap.to("#" + currentId + ">h1", {
-                                css: {
-                                    fontSize: "2rem"
-                                }
-                            });        
+            //         if(count == 0 || count == skillCount - 1) {
+            //             isAnimating = false;
+            //         }
+            //         if(!isAnimating) {
+            //             if(delta > 0 && count < skillCount - 1) {
+            //                 var previousId = $(".title").eq(count).attr("id");
+            //                 var currentId = $(".title").eq(count + 1).attr("id");
+            //                 activeSericeId = currentId;
+            //                 gsap.to("#" + previousId, {
+            //                     duration: duration,
+            //                     autoAlpha: 0.2
+            //                 });
+            //                 gsap.to("#" + previousId + ">h1", {
+            //                     css: {
+            //                         fontSize: "1.5rem"
+            //                     }
+            //                 });
+            //                 gsap.to("#" + currentId, {
+            //                     duration: duration,
+            //                     autoAlpha: 1
+            //                 });
+            //                 gsap.to("#" + currentId + ">h1", {
+            //                     css: {
+            //                         fontSize: "2rem"
+            //                     }
+            //                 });        
                        
                             
-                            if(currentId =="SharePoint")
-                            {
-                               // gsap.to(".firstCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})   
-                            }   
-                            if(currentId =="Custom")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*2.9), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".secondCol",{y:-(heightBg*12.2), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".thirdCol",{y:-(heightBg*2.86), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".fourthCol",{y:-(heightBg*11.7), duration: 2.5, ease: "power2.out"}) 
+            //                 if(currentId =="SharePoint")
+            //                 {
+            //                    // gsap.to(".firstCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})   
+            //                 }   
+            //                 if(currentId =="Custom")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*2.9), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".secondCol",{y:-(heightBg*12.2), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".thirdCol",{y:-(heightBg*2.86), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".fourthCol",{y:-(heightBg*11.7), duration: 2.5, ease: "power2.out"}) 
                                  
-                            }              
+            //                 }              
                           
-                            if(currentId =="Mobile")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*8), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".secondCol",{y:-(heightBg*7.2), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".thirdCol",{y:-(heightBg*7.9), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".fourthCol",{y:-(heightBg*7.8), duration: 2.5, ease: "power2.out"})   
-                            }              
+            //                 if(currentId =="Mobile")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*8), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".secondCol",{y:-(heightBg*7.2), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".thirdCol",{y:-(heightBg*7.9), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".fourthCol",{y:-(heightBg*7.8), duration: 2.5, ease: "power2.out"})   
+            //                 }              
                           
                                      
                           
-                            if(currentId =="CRM")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*11.6), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".secondCol",{y:-(heightBg*2.8), duration: 2.5, ease: "power2.out"})     
-                                gsap.to(".thirdCol",{y:-(heightBg*11.8), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".fourthCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})     
-                            }   
-                            if(currentId =="GP")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*14.6), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".secondCol",{y:-(heightBg*0.1), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".thirdCol",{y:-(heightBg*14.45), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".fourthCol",{y:-(heightBg*0.4), duration: 2.5, ease: "power2.out"})     
-                            }              
+            //                 if(currentId =="CRM")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*11.6), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".secondCol",{y:-(heightBg*2.8), duration: 2.5, ease: "power2.out"})     
+            //                     gsap.to(".thirdCol",{y:-(heightBg*11.8), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".fourthCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})     
+            //                 }   
+            //                 if(currentId =="GP")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*14.6), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".secondCol",{y:-(heightBg*0.1), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".thirdCol",{y:-(heightBg*14.45), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".fourthCol",{y:-(heightBg*0.4), duration: 2.5, ease: "power2.out"})     
+            //                 }              
                           
-                           currentServiceId = currentServiceId + 100;
-                            gsap.to(".titleContainer", {
-                                duration: duration,
-                                y: "-=" + 100,
-                                onComplete: () => (isAnimating = false)
-                            });
+            //                currentServiceId = currentServiceId + 100;
+            //                 gsap.to(".titleContainer", {
+            //                     duration: duration,
+            //                     y: "-=" + 100,
+            //                     onComplete: () => (isAnimating = false)
+            //                 });
 
-                           console.log(currentServiceId);
+            //                console.log(currentServiceId);
                            
                             
-                            count++;
-                            colorCount++;                           
+            //                 count++;
+            //                 colorCount++;                           
                        
                       
-                        }
-                        else if(delta < 0 && count > 0) {
-                            var previousId = $(".title").eq(count).attr("id");
-                            var currentId = $(".title").eq(count - 1).attr("id");
-                            activeSericeId = currentId;
-                            gsap.to("#" + previousId, {
-                                duration: duration,
-                                autoAlpha: 0.2
-                            });
-                            gsap.to("#" + previousId + ">h1", {
-                                css: {
-                                    fontSize: "1.5rem"
-                                }
-                            });
-                            gsap.to("#" + currentId, {
-                                duration: duration,
-                                autoAlpha: 1
-                            });
-                            gsap.to("#" + currentId + ">h1", {
-                                css: {
-                                    fontSize: "2rem"
-                                }
-                            });                                                      
-                            gsap.to(".titleContainer", {
-                                duration: duration,
-                                y: "+=" + 100,
-                                onComplete: () => (isAnimating = false)
-                            });      
-                            currentServiceId = currentServiceId - 100;
+            //             }
+            //             else if(delta < 0 && count > 0) {
+            //                 var previousId = $(".title").eq(count).attr("id");
+            //                 var currentId = $(".title").eq(count - 1).attr("id");
+            //                 activeSericeId = currentId;
+            //                 gsap.to("#" + previousId, {
+            //                     duration: duration,
+            //                     autoAlpha: 0.2
+            //                 });
+            //                 gsap.to("#" + previousId + ">h1", {
+            //                     css: {
+            //                         fontSize: "1.5rem"
+            //                     }
+            //                 });
+            //                 gsap.to("#" + currentId, {
+            //                     duration: duration,
+            //                     autoAlpha: 1
+            //                 });
+            //                 gsap.to("#" + currentId + ">h1", {
+            //                     css: {
+            //                         fontSize: "2rem"
+            //                     }
+            //                 });                                                      
+            //                 gsap.to(".titleContainer", {
+            //                     duration: duration,
+            //                     y: "+=" + 100,
+            //                     onComplete: () => (isAnimating = false)
+            //                 });      
+            //                 currentServiceId = currentServiceId - 100;
 
-                            console.log(currentServiceId);
-                            if(currentId =="SharePoint")
-                            {
-                                gsap.to(".firstCol",{y:-100, duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".secondCol",{y:-(heightBg*14.7), duration: 2.5, ease: "power2.out"})    
-                                gsap.to(".thirdCol",{y:-150, duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".fourthCol",{y:-(heightBg*14.3), duration: 2.5, ease: "power2.out"})    
-                            }   
-                            if(currentId =="Custom")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".secondCol",{y:-(heightBg*12.2), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".thirdCol",{y:-(heightBg*2.86), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".fourthCol",{y:-(heightBg*11.7), duration: 2.5, ease: "power2.out"}) 
-                            }              
+            //                 console.log(currentServiceId);
+            //                 if(currentId =="SharePoint")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-100, duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".secondCol",{y:-(heightBg*14.7), duration: 2.5, ease: "power2.out"})    
+            //                     gsap.to(".thirdCol",{y:-150, duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".fourthCol",{y:-(heightBg*14.3), duration: 2.5, ease: "power2.out"})    
+            //                 }   
+            //                 if(currentId =="Custom")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".secondCol",{y:-(heightBg*12.2), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".thirdCol",{y:-(heightBg*2.86), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".fourthCol",{y:-(heightBg*11.7), duration: 2.5, ease: "power2.out"}) 
+            //                 }              
                           
-                            if(currentId =="Mobile")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*8), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".secondCol",{y:-(heightBg*7.2), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".thirdCol",{y:-(heightBg*7.9), duration: 2.5, ease: "power2.out"})   
-                                gsap.to(".fourthCol",{y:-(heightBg*7.8), duration: 2.5, ease: "power2.out"})   
-                            }              
+            //                 if(currentId =="Mobile")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*8), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".secondCol",{y:-(heightBg*7.2), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".thirdCol",{y:-(heightBg*7.9), duration: 2.5, ease: "power2.out"})   
+            //                     gsap.to(".fourthCol",{y:-(heightBg*7.8), duration: 2.5, ease: "power2.out"})   
+            //                 }              
                           
                                      
                           
-                            if(currentId =="CRM")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*11.6), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".secondCol",{y:-(heightBg*2.8), duration: 2.5, ease: "power2.out"})     
-                                gsap.to(".thirdCol",{y:-(heightBg*11.8), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".fourthCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})        
-                            }   
-                            if(currentId =="GP")
-                            {
-                                gsap.to(".firstCol",{y:-(heightBg*14.6), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".secondCol",{y:-(heightBg*0.1), duration: 2.5, ease: "power2.out"})  
-                                gsap.to(".thirdCol",{y:-(heightBg*14.45), duration: 2.5, ease: "power2.out"}) 
-                                gsap.to(".fourthCol",{y:-(heightBg*0.4), duration: 2.5, ease: "power2.out"})     
-                            }       
-                          //  console.log(count);
-                            count--;
-                            colorCount--;                            
-                        }
-                        isAnimating = true;
-                    }
-                }
+            //                 if(currentId =="CRM")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*11.6), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".secondCol",{y:-(heightBg*2.8), duration: 2.5, ease: "power2.out"})     
+            //                     gsap.to(".thirdCol",{y:-(heightBg*11.8), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".fourthCol",{y:-(heightBg*3), duration: 2.5, ease: "power2.out"})        
+            //                 }   
+            //                 if(currentId =="GP")
+            //                 {
+            //                     gsap.to(".firstCol",{y:-(heightBg*14.6), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".secondCol",{y:-(heightBg*0.1), duration: 2.5, ease: "power2.out"})  
+            //                     gsap.to(".thirdCol",{y:-(heightBg*14.45), duration: 2.5, ease: "power2.out"}) 
+            //                     gsap.to(".fourthCol",{y:-(heightBg*0.4), duration: 2.5, ease: "power2.out"})     
+            //                 }       
+            //               //  console.log(count);
+            //                 count--;
+            //                 colorCount--;                            
+            //             }
+            //             isAnimating = true;
+            //         }
+            //     }
                 
-                    });
+            //         });
              
 
     tlSkill.pause();
@@ -716,32 +719,32 @@ $(document).ready(function () {
 
 
         .from("#svgContact", 0.3, { scaleY: 0, transformOrigin: "0% 50%" })
-        .from("#row5-1", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-2", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-3", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-4", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-5", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-6", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        //.from("#row5-7",0.05,{autoAlpha: 0,y:-10, stagger:0},).from("#row5-8",0.05,{autoAlpha: 0,y:-10, stagger:0},).from("#row5-9",0.05,{autoAlpha: 0,y:-10, stagger:0},)
-        //.from("#row5-10",0.05,{autoAlpha: 0,y:-10, stagger:0},).from("#row5-11",0.05,{autoAlpha: 0,y:-10, stagger:0},)
-        .from("#row5-12", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-13", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-14", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-15", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-16", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-17", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-18", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-19", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-20", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-21", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-22", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-23", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-24", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-25", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-26", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-27", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-28", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
-        .from("#row5-29", 0.05, { autoAlpha: 0, y: -10, stagger: 0 },)
+        .from("#row5-1", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-2", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-3", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-4", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-5", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-6", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        //.from("#row5-7",0.05,{autoAlpha: 0,y:-10, stagger:0}).from("#row5-8",0.05,{autoAlpha: 0,y:-10, stagger:0}).from("#row5-9",0.05,{autoAlpha: 0,y:-10, stagger:0})
+        //.from("#row5-10",0.05,{autoAlpha: 0,y:-10, stagger:0}).from("#row5-11",0.05,{autoAlpha: 0,y:-10, stagger:0})
+        .from("#row5-12", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-13", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-14", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-15", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-16", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-17", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-18", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-19", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-20", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-21", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-22", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-23", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-24", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-25", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-26", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-27", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-28", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
+        .from("#row5-29", 0.05, { autoAlpha: 0, y: -10, stagger: 0 })
         .from(SplitTextTitle.chars, 0.1, { opacity: 0, x: -10,stagger: 0.1 },"-=2")
         .from(".titleContact", 0.3, { x: -100, autoAlpha: 0 },"-=2")           
         .from(".address", 0.3, { y: -50, autoAlpha: 0 },"-=2")
@@ -874,4 +877,30 @@ $(document).ready(function () {
         tlMobile.timeScale(1);
         tlMobile.reverse();
     }
+
+    /*Newly Added*/
+    $('.navbar-toggler').click(function() {
+        $(this).parent().toggleClass('show');
+        $('.menu-overlay').toggleClass('show');
+        $('body').toggleClass('lock-scroll');
+    });
+
+    $('.menu-close').click(function() {
+        $(this).parent().parent().toggleClass('show');
+        $('.menu-overlay').toggleClass('show');
+        $('body').toggleClass('lock-scroll');
+    });
+
+    $(document).on('click', '.show .navbar-nav>li>a', function() {
+        $(this).parents('nav').toggleClass('show');
+        $('.menu-overlay').toggleClass('show');
+        $('body').toggleClass('lock-scroll');
+    });
+
+    $('.menu-overlay').click(function() {
+        $(this).parents('nav').toggleClass('show');
+        $(this).toggleClass('show');
+        $('body').toggleClass('lock-scroll');
+    });
+
 });
