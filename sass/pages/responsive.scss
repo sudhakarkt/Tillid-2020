@@ -30,6 +30,33 @@
     overflow: hidden;
 }
 
+.career-mobile {
+    padding-left: 15px;
+}
+
+#contacts .contactleft .mailId li span, #contacts .contactleft .mailId li a {
+    height: 20px;
+    line-height: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#contacts .contactleft .mailId li span img {
+    margin-bottom: -3px;
+}
+
+@media (max-width: 375px) {
+    #home .contentContaner .leftContainer .content .maskBox h2 {
+        line-height: 30px;
+        font-size: 1.5rem;
+    }
+
+    #home .contentContaner .leftContainer .content .maskBox h1 {
+        font-size: 2rem;
+        line-height: 36px;
+        height: 30px;
+    }
+}
 
 @media all and (-ms-high-contrast:none)
 {
@@ -48,12 +75,6 @@
      }
 }
 
-@media (max-width: 375px) {
-    body {
-        display: none;
-    }
-}
-
 @media (max-width: 1023px) {
 
     html, body {
@@ -69,9 +90,27 @@
         overflow: auto;
     }
 
+    #contacts .contactleft .mailId {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 0px;
+
+        span.hide-mobile {
+                display: none;
+        }
+
+        .career-mobile {
+            padding-left: 0px;
+        }
+    }
+
     section.section1 {
         margin-top: 65px;
         height: calc(100% - 65px);
+    }
+
+    .mailId li {
+        margin-bottom: 5px;
     }
 
     .hide-mobile {
@@ -253,7 +292,9 @@
     }
 
     #home .contentContaner .leftContainer .content .maskBox h1 {
-        font-size: 2.1rem;
+        font-size: 2rem;
+        line-height: 36px;
+        height: 30px;
     }
 
     #home .contentContaner .leftContainer .content .maskBox h2 {
@@ -528,7 +569,7 @@
     }
 
     #svgContactBg, #svgContact, #contacts .dots5  {
-        min-height: 390px;
+        min-height: 430px;
     }
 
     footer {
